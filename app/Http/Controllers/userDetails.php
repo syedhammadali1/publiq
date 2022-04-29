@@ -45,7 +45,12 @@ class userDetails extends Controller
             'age' => 'required',
             'gender' => 'required',
             'question_2' => 'required'
-        ]);
+        ],
+
+        [
+            'question_2.required' => 'Please Check A Box',
+        ]
+    );
 
 
 
@@ -59,7 +64,7 @@ class userDetails extends Controller
             'reviews' => json_encode($request->question_2),
         ]);
 
-        return redirect()->route('home')->with(['success' => 'Thanks']);
+        return redirect()->route('home')->with('success', 'Thank You For Registration We Will Back Soon ');
     }
 
     /**

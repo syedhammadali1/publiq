@@ -4,7 +4,7 @@ Theme URI: http://www.ansonika.com/wilio/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 1. SITE STRUCTURE and TYPOGRAPHY
 - 1.1 Typography
@@ -1832,4 +1832,23 @@ input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-w
 .points span{
   text-align: left;
   color:black;
+}
+
+.toast-primary {
+    background-color: black;
+    color: white;
+}
+
+#toast-container>.toast-success {
+    opacity: 1;
+    background-color: black;
+    color: white;
+    height: 8rem;
+    padding-top: 50px;
+}
+
+#toast-container {
+    margin-right: 520px;
+
+
 }
